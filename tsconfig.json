@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "jsx": "react", //включаем tsx
+    "module": "esnext", //чтобы работал import
+    "target": "ES6",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ], //включаем библиотеки для поддержки синтаксисов
+    "strict": true,
+    "forceConsistentCasingInFileNames": true, //учет регистра
+    "allowJs": true, //разрешение компиляции js кода
+    "skipLibCheck": true, //Не проверять типы, заданные во всех файлах описания типов (*.d.ts)
+    "allowSyntheticDefaultImports": true, // Разрешить импортировать модули не имеющие внутри себя "import default"
+    "noFallthroughCasesInSwitch": true, // Сообщить об ошибке в случае обнаружения проваливания в конструкции switch-case
+    "moduleResolution": "node", // Определить способ поиска модулей в папках: как в Node.js
+    "isolatedModules": true, // Обрабатывать каждый файл, как отдельный изолированный модуль.
+    "esModuleInterop": true, //Для устранения проблем импорта es модулей
+    "resolveJsonModule": true, //Разрешаем импорт json модулей
+    "baseUrl": "./src", // Путь до базовой папки для поиска не относительных путей до файлов.
+    "types": ["react/next", "react-dom/next", "node"],
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.js", "./**/*.jsx", ".eslintrc.js"],
+  "exclude": ["node_modules", "dist", ".husky"]
+}

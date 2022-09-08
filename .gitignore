@@ -1,0 +1,14 @@
+# IDEs and editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+/.idea
+
+
+# compiled output
+/dist
+/node_modules
+/node
+/target

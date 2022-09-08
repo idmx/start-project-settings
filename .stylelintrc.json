@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order",
+    "stylelint-declaration-block-no-ignored-properties"
+  ],
+  "rules": {
+    "plugin/declaration-block-no-ignored-properties": true,
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "ignore": [
+          "after-comment",
+          "after-declaration",
+          "inside-single-line-block"
+        ]
+      }
+    ]
+  },
+  "extends": ["stylelint-config-standard", "stylelint-config-standard-scss", "stylelint-config-idiomatic-order"]
+}
