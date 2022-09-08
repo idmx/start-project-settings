@@ -33,6 +33,7 @@ module.exports = {
 	plugins: ["@typescript-eslint", "react", "prettier", "import", "promise", "simple-import-sort"],
 	rules: {
 		"@typescript-eslint/no-namespace": "off",
+		"@typescript-eslint/no-var-requires": 0,
 		"react/jsx-filename-extension": [1, { extensions: [".js", ".jsx", ".ts", ".tsx"] }],
 		"no-use-before-define": ["error", { functions: false }],
 		"prettier/prettier": ["error"],
