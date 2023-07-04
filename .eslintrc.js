@@ -33,6 +33,9 @@ module.exports = {
 	plugins: ["@typescript-eslint", "react", "prettier", "import", "promise", "simple-import-sort"],
 	rules: {
 		"@typescript-eslint/no-namespace": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-non-null-assertion": "off",
+		"@typescript-eslint/ban-ts-comment": "off",
 		"@typescript-eslint/no-var-requires": 0,
 		"react/jsx-filename-extension": [1, { extensions: [".js", ".jsx", ".ts", ".tsx"] }],
 		"no-use-before-define": ["error", { functions: false }],
@@ -41,7 +44,6 @@ module.exports = {
 		"react/prop-types": "off",
 		"react/no-array-index-key": "off",
 		"react/display-name": "off",
-		indent: ["error", "tab", { SwitchCase: 1 }],
 		"linebreak-style": 0,
 		quotes: ["error", "double"],
 		semi: ["error", "always"],
